@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <script type="text/javascript">
+        function m(){
+            $('#modal')
+            .modal('show');
+        }
+
+        function n(){
+            $('#modallogin')
+            .modal('show');
+        }
+
+
+
+        
+        $('.ui.form')
+        .form({
+            fields: {
+            
+            email: {
+                identifier: 'email',
+                rules: [
+                {
+                    type   : 'empty',
+                    prompt : 'Please type your email'
+                }
+                ]
+            },
+            
+            username: {
+                identifier: 'username',
+                rules: [
+                {
+                    type   : 'empty',
+                    prompt : 'Please enter a username'
+                }
+                ]
+            },
+            password: {
+                identifier: 'password',
+                rules: [
+                {
+                    type   : 'empty',
+                    prompt : 'Please enter a password'
+                },
+                {
+                    type   : 'minLength[6]',
+                    prompt : 'Your password must be at least {ruleValue} characters'
+                }
+                ]
+            },
+            password: {
+                identifier: 'confirm password',
+                rules: [
+                {
+                    type   : 'empty',
+                    prompt : 'Please enter a password'
+                },
+                {
+                    type   : 'minLength[6]',
+                    prompt : 'your password should match the one above'
+                }
+                ]
+            }
+            
+            }
+        })
+        ;
+        
+    </script>
+</head>
+<body class="new" id="top">
+    <div  >
+        <!-- <div class="overlay"> -->
+        <div class="ui inverted segment"  style="background-color:rgb(6, 54, 54); box-shadow: 0 4px 12px rgba(43, 230, 189, 0.329); margin-left: -1em; margin-top: -10%;  position: fixed; width: 120%; height: 6em; z-index: 0;">
+                <div class="ui inverted secondary pointing menu" style="margin-left: 3em; border: none;" >
+                  <a class="active item" href="#top">
+                    Home
+                  </a>
+                  <a class=" yellow item" href="#section">
+                    Product
+                  </a>
+                  <a class="item" id="">
+                    Contact
+                  </a>
+                </div>
+                
+              </div>
+              <div class="ui buttons" id="m">
+                    <!-- <button class="ui red basic button">O</button> -->
+                    <a onclick="n();"><button class="ui teal basic button" >Login</button></a>
+                    <a onclick= "m();" ><button class="ui olive basic button">Signup</button></a>
+                  </div>
+        <!-- </div> -->
+    </div>
+    
+    <div class="headed" >
+        <h1 class="yellow " style=" margin-top:4%; margin-left: -1em; color:rgb(5, 83, 97); text-align: center; font-family: 'Courier New', Courier, monospace; font-size: 6em; font-weight: 500; border: midnightblue;">AUTHORS - <span>HAVEN</span></h1>
+        <div class="ui divider" style="margin-top:-1%; width: 85em; margin-left: 1em; "></div> 
+        <p class="" style="background-color:rgba(245, 243, 241, 0.24);  border:none; text-align:center; font-size:2em; margin-top: 2%; height:6.9em; font-weight: 500; font-family: monospace; color: rgb(6, 54, 54)">
+            
+            Welcome to the days where you dont have to wonder whether you belong or are good enough.As amodern writer, get to interact with beautiful souls across the globe
+             for proffesional criticism and also have fun reading through our 
+             <!-- well stocked portifolio of beautiful pieces of writing.<br>
+            "WHY wait mate, <span style="color:rgb(6, 54, 54);">Signup</span> and get started" -->
+            <!-- Welcome to the days where you dont have to wonder whether you belong or are good enough. <br>
+            Welcome to the days where you dont have to wonder whether you belong or are good enough.  -->
+        </p>
+    </div>
+    <a href="#section"><i class="huge blue angle double down icon" style=" margin-left:10.5em; margin-top: 1%; cursor: pointer;" ></i></a>
+    <div class="ui modal" id="modal">
+            <i class="close icon"></i>
+            <div class="header">
+              Signup
+            </div>
+                    <div class="ui two column very relaxed stackable grid">
+                            <form class="ui form segment" id="signup">
+                                    <p>Let's go ahead and get you signed up.</p>
+                                    <div class="two fields">
+                                    <div class="field">
+                                      <label>Username</label>
+                                      <input placeholder="Username" name="username" type="text" >
+                                    </div>
+                                    <div class="field">
+                                            <label>Email</label>
+                                            <input placeholder="User email" name="username" type="email" >
+                                          </div>
+
+                                        </div>
+                                    <div class="two fields">
+                                    <div class="field">
+                                      <label>Password</label>
+                                      <input type="password" name="password" placeholder="password">
+                                    </div>
+                                    <div class="field">
+                                            <label>Confirm Password</label>
+                                            <input type="password" name="password" placeholder="password">
+                                          </div>
+                                    </div><br>
+                                    <div class="inline field">
+                                      <div class="ui checkbox">
+                                        <input type="checkbox" name="terms">
+                                        <label>I agree to the Terms and Conditions</label>
+                                        
+                                      </div><br>
+                                      <!-- <label>I already have an account. Login</label> -->
+                                    </div>
+                                    <div class="ui primary submit button"  id="btn" >Submit</div>
+                                    <div class="ui error message" id="alert"></div>
+                                    <br>
+                                    <div class="ui horizontal divider">
+                                            Alternatively
+                                          </div>
+                                    <p class="minititle">You may signup using any of the listed options</p>
+                                    <label id="social"> <i class="huge blue facebook square icon"></i><i class="huge red google plus sqquare icon"></i><i class="huge blue linkedin  icon"></i></label><br>
+                                    <label class="bold">I have an account , Log me in !! </label>
+                                  </form>
+                                  
+                    </div>
+            </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="ui modal" id="modallogin">
+                <i class="close icon"></i>
+                <div class="header">
+                  Login
+                </div>
+                        <div class="ui two column very relaxed stackable grid">
+                                <form class="ui form segment" id="signin">
+                                        <p style="color : teal; " >Let's get you into the Fun.</p>
+                                        
+                                        <div class="field">
+                                          <label>Username</label>
+                                          <input placeholder="Username" name="username" type="text" >
+                                        </div>
+                                        
+                                        <div class="field">
+                                          <label>Password</label>
+                                          <input type="password" name="password" >
+                                        </div>
+                                        <div class="ui primary submit button"  id="teal" >Submit</div>
+                                        <div class="ui error message" id="alert"></div>
+                                        <br><br><br>
+                                        <label class="bold">I have no account, Signup !!</label>
+                                        <!-- <div class="ui horizontal divider" id="line"></div> -->
+                                      </form>
+                                      
+                        </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+
+          <div class="section" id="section"></div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+.new{
+    background-image:   url('../assets/write.jpg') ;
+    height: 120em;
+    /* position: fixed; */
+    background-attachment: fixed;
+    width: 125em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 10 10 10 900px rgba(46, 38, 1, 0.253);
+    z-index: -4;
+}
+
+
+#m{
+    margin-top: -8%;
+    position: fixed;
+    margin-left: 79%;
+}
+
+.headed{
+    background-color: rgba(233, 183, 18, 0.151);
+    height: 27em;
+    /* z-index: -2; */
+    margin-top: 9em;
+    border: rgba(236, 236, 236, 0.39) 0.1px solid;
+    width: 70%;
+    margin-left: 1.5em;
+}
+
+#modal{
+    height: 80%;
+    width: 90%;
+    /* border: teal 1px solid; */
+
+}
+
+#modallogin{
+    height: 80%;
+    width: 90%;
+}
+
+
+.header{
+    text-align: center;
+}
+
+#seg{
+    margin-top: -1;
+    height: 25em;
+}
+
+#signup{
+    margin-left: 8em;
+    margin-top: 2em;
+    height: 30em;
+    border:none;
+    width: 80%;
+}
+
+#signin{
+    margin-left: 20em;
+    margin-top: 2em;
+    height: 25em;
+    border:none;
+    width: 55%;
+}
+
+#alert{
+    margin-left: 2.5em;
+    width: 82.4em;
+    height: 5em;
+    margin-top: -4em;
+}
+
+
+#btn{
+    background-color: teal;
+    margin-left: 60em;
+    margin-top: -2em;
+    position: fixed;
+}
+
+#social{
+    margin-left: 27em;
+}
+
+.minititle{
+    text-align: center;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+#teal{
+    background-color: teal;
+    margin-left: 0em;
+    margin-top: 2em;
+}
+
+
+#line{
+    margin-top: -3em;
+}
+
+
+.section{
+    height: 70em;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    margin-top: 3em;
+}
+
+
